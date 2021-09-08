@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Magic Eight Ball</title>
+  </head>
+  <body>
+    <header>
+      <h1>Eight Ball Game</h1>
+      <p>
+        Insert your name and your question and the magic ball will tell your
+        future.
+      </p>
+    </header>
+    <main>
+      <div class="inputs">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Type your name.."
+        />
+        <label for="name">Question:</label>
+        <input
+          type="text"
+          id="question"
+          name="question"
+          placeholder="Type your question.." 
+        />
+      </div>
+      <button class="askButton" id="buttonAsk">Ask</button>
+      <img class="ball">
+        <h1 id="msg"></h1>
+        <h3 id="answ"></h3>
+        <img class="ballImg" src="ball.png" alt="magic ball" ></img>
+      </div>
+    </main>
+    <script src="./magicEightBall.js"></script>
+  </body>
+</html>

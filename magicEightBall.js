@@ -1,11 +1,30 @@
-let username = "Daniel";
-let userQuestion = "Will I win the lottery?";
+let username = document.getElementById("name");
+let userQuestion = document.getElementById("question");
 let randomNumber = Math.floor(Math.random() * 7);
 let eightBall = "";
+let message = "";
+const askButton = document.getElementById("buttonAsk");
+const msg = document.getElementById('msg');
+const answer = document.getElementById('answ');
 
-username ? console.log(`Hello, ${username}!`) : console.log("Hello!");
+askButton.addEventListener("click", () => {
+  msg.innerHTML = "";
+  name = username.value;
+  question = userQuestion.value;
+  
 
-console.log(userQuestion);
+  name ? (message = `Hello, ${name}!`) : (message = "Hello!");
+  checkInputs(question) ? answer.innerHTML = eightBall : answer.innerHTML = "Please insert a question";
+  msg.innerHTML = message;
+  username.value = "";
+  userQuestion.value = "";
+}); 
+
+const checkInputs = (question) => {
+  if(question){
+    return true;
+  }
+}
 
 switch (randomNumber) {
   case 1:
@@ -33,5 +52,3 @@ switch (randomNumber) {
     eightBall = "Signs point to yes";
     break;
 }
-
-console.log(eightBall);

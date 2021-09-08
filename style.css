@@ -1,0 +1,42 @@
+body {
+  background: #525252;
+  background: -webkit-linear-gradient(to right, #3d72b4, #525252);
+  background: linear-gradient(to right, #3d72b4, #525252);
+  font-family: "Roboto", sans-serif;
+  background-size: cover;
+}
+
+header h1,
+header p {
+  text-align: center;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin: 15px auto;
+}
+
+.ball {
+  margin: auto;
+}
+
+.ball h1 {
+    text-align: center;
+}
+
+.ballImg {
+    display: grid; 
+}
+
+#answ {
+    position: absolute;
+    top: 55%;
+    height: 200px;
+    width: 200px;
+}
